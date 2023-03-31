@@ -7,7 +7,7 @@ body {
   background-image: url(assets/main.png);
   background-color: rgb(170, 170, 170);
   background-size: 1700px;
-  /* background-size: cover; */
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -25,7 +25,6 @@ p {
   display: flex;
   justify-content: center;
   background-color: #101010;
-  /* background-image: url(assets/banner.png); */
   background-position: center;
   background-size: cover;
   outline-style: solid;
@@ -134,9 +133,8 @@ input[type="text"] {
 }
 
 #footer {
-  background-color: #101010;
+  background-color: rgba(16, 16, 16, 0.7);
   border-top: 10px solid white;
-  /* background-image: url(assets/footbg.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   padding: 30px 0px 100px 50px;
