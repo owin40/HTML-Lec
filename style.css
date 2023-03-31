@@ -1,0 +1,92 @@
+.atas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#avatar_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 25%;
+  margin: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 0px 5px grey;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.avatar:hover {
+  transform: scale(1.2);
+}
+
+.avatar.active {
+  border: 100px solid #007bff;
+}
+
+.avatar_name {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+#form_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+form label,
+form input,
+form button {
+  width: 100%;
+  max-width: 300px;
+}
+
+form button {
+  margin-top: 20px;
+}
+
+.prompt {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid black;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.prompt.show {
+  display: block;
+}
