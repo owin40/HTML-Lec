@@ -1,3 +1,22 @@
+body {
+  background-image: url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+/* body {
+  background-color: #f1f1f1;
+} */
+
+.judul {
+  color: white;
+}
+
+.batesan {
+  border: black 5px solid;
+}
+
 .atas {
   display: flex;
   flex-direction: column;
@@ -26,7 +45,7 @@
   margin: 15px;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
-  box-shadow: 0px 0px 5px grey;
+  box-shadow: 0px 0px 5px black;
 }
 
 .avatar img {
@@ -49,6 +68,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   font-weight: bold;
+  color: white;
 }
 
 #form_container {
@@ -74,6 +94,21 @@ form button {
 form button {
   margin-top: 20px;
 }
+
+.btn-primary {
+  color: white;
+  background: transparent;
+  border: white 1px solid;
+}
+
+/* .btn-primary {
+  background: linear-gradient(
+    to bottom,
+    rgb(223, 102, 122),
+    rgb(255, 255, 255)
+  );
+  border: tomato 1px solid;
+} */
 
 .prompt {
   display: none;
