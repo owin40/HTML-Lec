@@ -115,16 +115,16 @@ let timerId = setInterval(function () {
   }
   if (hour >= 6 && hour < 11) {
     messageDiv.textContent = "Good morninggg " + playerName;
-    $("#screen").css("background-image", "url(assets/timebg/day.png)");
+    $("#screen").css("background-image", "url(assets/timebg/day2.png)");
   } else if (hour >= 12 && hour < 17) {
-    messageDiv.textContent = "it's eveninn " + playerName;
-    $("#screen").css("background-image", "url(assets/timebg/afternoon.png)");
-  } else if (hour >= 17 && hour < 19) {
     messageDiv.textContent = "after the noonn " + playerName;
-    $("#screen").css("background-image", "url(assets/timebg/evening.png)");
+    $("#screen").css("background-image", "url(assets/timebg/afternoon2.png)");
+  } else if (hour >= 17 && hour < 19) {
+    messageDiv.textContent = "it's eveninn " + playerName;
+    $("#screen").css("background-image", "url(assets/timebg/evening2.png)");
   } else if ((hour >= 19 && hour < 24) || (hour >= 0 && hour < 6)) {
     messageDiv.textContent = "Nighty nightt " + playerName;
-    $("#screen").css("background-image", "url(assets/timebg/night.png)");
+    $("#screen").css("background-image", "url(assets/timebg/night2.png)");
   }
 
   if (day % 5 == 0 && day != 0 && !levelincrease && hour == 0 && min == 0) {
