@@ -26,7 +26,7 @@ p {
   justify-content: center;
   background-color: #101010;
   background-position: center;
-  background-size: cover;
+  background-size: 500px;
   outline-style: solid;
   outline-width: 10px;
   outline-color: white;
@@ -110,6 +110,11 @@ p {
 #startbutton button {
   background-color: transparent;
   border: transparent;
+}
+
+#starttt {
+  width: 25%;
+  height: 25%px;
 }
 
 input[type="text"] {
