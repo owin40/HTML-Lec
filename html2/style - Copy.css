@@ -1,0 +1,150 @@
+@font-face {
+  font-family: Pixelbit;
+  src: url(assets/font/8bit.TTF) format("truetype");
+}
+
+body {
+  background-image: url(assets/sahara.png);
+  background-color: rgb(170, 170, 170);
+  background-size: 1700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+p {
+  font-family: Pixelbit;
+}
+
+#logo {
+  height: 200px;
+  width: 200px;
+}
+
+#header {
+  background-image: url(assets/star.png);
+  display: flex;
+  justify-content: center;
+  background-color: #101010;
+  background-position: center;
+  background-size: cover;
+  outline-style: solid;
+  outline-width: 10px;
+  outline-color: white;
+  color: white;
+}
+
+#avatar-container {
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 40%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#avatar {
+  background-color: blue;
+  height: 50%;
+  width: 50%;
+  align-items: center;
+}
+
+#row-avatar {
+  height: 500px;
+  max-height: 50vh;
+  align-items: center;
+  overflow: auto;
+}
+
+.slider-inner {
+  width: 500px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  max-height: 60vh;
+}
+
+.slider-outer {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.slider-inner img {
+  display: none;
+  width: auto;
+  height: 80%;
+}
+
+.slider-inner img.active {
+  display: inline-block;
+}
+
+.prev,
+.next {
+  float: left;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  max-height: 10vh;
+}
+
+.prev {
+  position: relative;
+  z-index: 100;
+}
+
+.next {
+  position: relative;
+  z-index: 100;
+}
+
+#startbutton {
+  margin-bottom: 30px;
+}
+
+#startbutton button {
+  background-color: transparent;
+  border: transparent;
+}
+
+input[type="text"] {
+  background-image: url(assets/star.png);
+  background-size: 350px;
+  border-color: transparent;
+  background-color: transparent;
+  width: 400px;
+  height: 50px;
+  outline-width: 5px;
+  outline-style: solid;
+  outline-color: white;
+  font-family: Pixelbit;
+  color: white;
+  text-align: center;
+}
+
+::placeholder {
+  font-family: Pixelbit;
+  color: white;
+}
+
+#footer {
+  background-color: rgba(16, 16, 16, 0.7);
+  border-top: 10px solid white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 0px 100px 50px;
+  height: 100px;
+  width: 100%;
+  bottom: 0;
+  color: white;
+}
+
+#footer .row {
+  width: 100%;
+  height: fit-content;
+}
