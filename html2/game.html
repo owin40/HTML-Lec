@@ -16,17 +16,139 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header>
-      <!-- place navbar here -->
-    </header>
-    <main></main>
-    <footer>
-      <!-- place footer here -->
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
+    <main>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <div class="container-fluid" id="header">
+        <div class="row">
+          <div class="col-12 text-center">
+            <img src="assets/logo.png" class="img-fluid" id="logo" />
+            <p>WELCOME TO UMN GOTCHA</p>
+          </div>
+        </div>
+      </div>
+      <div id="myNav" class="overlay">
+        <div class="overlay-content">
+          <img onclick="credit()" src="assets/credit.png" />
+        </div>
+      </div>
+      <div class="container-fluid" id="header">
+        <div class="row">
+          <div class="col-12 text-center"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col text-center">
+              <div id="clock"></div>
+              <div id="message"></div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row" id="game">
+            <div class="col-sm-8 text-center" id="screen">
+              <div id="avatar-container">
+                <div id="playerinfo">
+                  <p>
+                    <span id="player"></span> is trying to be the healthiest.
+                  </p>
+                </div>
+                <div id="alertmakan"></div>
+                <div id="alertmain"></div>
+                <div id="alerttidur"></div>
+              </div>
+            </div>
+            <div class="col-sm-4" id="stat">
+              <div id="lvl"></div>
+              <div id="stats-a">
+                <p>Food</p>
+              </div>
+              <div class="row" id="stat-a">
+                <progress
+                  id="stat-food"
+                  value="50"
+                  max="100"
+                  class="progess_bar"
+                ></progress>
+              </div>
+              <div id="stats-b">
+                <p>Mood</p>
+              </div>
+              <div class="row" id="stat-b">
+                <progress
+                  id="stat-mood"
+                  value="50"
+                  max="100"
+                  class="progess_bar"
+                ></progress>
+              </div>
+              <div id="stats-c">
+                <p>Sleep</p>
+              </div>
+              <div class="row" id="stat-c">
+                <progress
+                  id="stat-sleep"
+                  value="80"
+                  max="100"
+                  class="progess_bar"
+                ></progress>
+              </div>
+              <div id="stats-d">
+                <p>Hygiene</p>
+              </div>
+              <div class="row" id="stat-d">
+                <progress
+                  id="stat-health"
+                  value="50"
+                  max="100"
+                  class="progess_bar"
+                ></progress>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid" id="choice">
+          <div class="row mt-4" id="options">
+            <div class="col-6 col-md-3 text-center">
+              <button onmouseup="optEat()" class="option" id="eat">
+                <img src=assets/options/eat.png />
+              </button>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <button onmouseup="optPlay()" class="option" id="play">
+                <img src=assets/options/play.png />
+              </button>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <button onmouseup="optSleep()" class="option" id="sleep">
+                <img src=assets/options/sleep.png />
+              </button>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <button onmouseup="optHealth()" class="option" id="health">
+                <img src=assets/options/hygiene.png />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid" id="footer">
+        <div class="row">
+          <p>Made By</p>
+          <p>
+            Godwin Gilbert Woisiri // Kyla Aryndra // Muhammad Amar Fadillah //
+            Siti Maryama Ramadhini Afifah
+          </p>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="game.js"></script>
+    </main>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

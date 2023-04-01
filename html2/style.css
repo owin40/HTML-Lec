@@ -27,12 +27,12 @@ p {
 }
 
 #header {
-  background-image: url(assets/star.png);
+  background-image: url(assets/star.gif);
   display: flex;
   justify-content: center;
   background-color: #101010;
   background-position: center;
-  background-size: 500px;
+  background-size: 350px;
   outline-style: solid;
   outline-width: 10px;
   outline-color: white;
@@ -161,4 +161,180 @@ input[type="text"] {
 #footer .row {
   width: 100%;
   height: fit-content;
+}
+
+#game {
+  height: fit-content;
+  outline-width: 10px;
+  outline-style: solid;
+  outline-color: white;
+  margin-bottom: 30px;
+}
+
+#clock {
+  margin: 50px 0px 10px 0px;
+  font-family: Pixelbit;
+  color: white;
+  font-size: 50px;
+  text-shadow: -5px 0 black, 0 5px black, 5px 0 black, 0 -5px black;
+}
+
+#playerinfo {
+  position: relative;
+  top: -180px;
+  margin-top: 0px;
+  padding: 7px 5px 1px 1px;
+  font-family: Pixelbit;
+  color: white;
+  font-size: 20px;
+  height: fit-content;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  background-color: black;
+}
+
+#lvl {
+  margin: 10px 0px 30px 0px;
+  font-family: Pixelbit;
+  color: white;
+  font-size: 20px;
+}
+
+#screen {
+  background-image: url(assets/timebg/evening.png);
+  background-position: bottom;
+  background-size: cover;
+}
+
+#avatar-container {
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 40%;
+  height: 450px;
+}
+
+#alertmakan {
+  text-align: left;
+  margin-top: 10px;
+  font-family: Pixelbit;
+  font-size: large;
+  color: white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+#alertmain {
+  text-align: left;
+  margin-top: 10px;
+  font-family: Pixelbit;
+  font-size: large;
+  color: white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+#alerttidur {
+  text-align: left;
+  margin-top: 10px;
+  font-family: Pixelbit;
+  font-size: large;
+  color: white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#message {
+  text-align: center;
+  margin: 10px 0px 50px 0px;
+  font-family: Pixelbit;
+  font-size: large;
+  color: white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#stat {
+  background-image: url(assets/star.png);
+  color: white;
+  background-size: 350px;
+}
+
+progress[value] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  margin-bottom: 10px;
+  width: 400px;
+  height: 25px;
+  color: white;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    -webkit-linear-gradient(left, #243337, #304752, #436c69, #67b19c, #97f9ab);
+
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+#choice {
+  margin: 50px 0px 50px 0px;
+}
+
+.option {
+  background-color: transparent;
+  border-color: transparent;
+  margin-bottom: 10px;
+}
+
+.option img {
+  max-width: 20vh;
+}
+
+#stats-a {
+  display: flex;
+  justify-content: space-between;
+  font-family: Pixelbit;
+}
+#stats-b {
+  display: flex;
+  justify-content: space-between;
+  font-family: Pixelbit;
+}
+#stats-c {
+  display: flex;
+  justify-content: space-between;
+  font-family: Pixelbit;
+}
+#stats-d {
+  display: flex;
+  justify-content: space-between;
+  font-family: Pixelbit;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+}
+
+.overlay-content {
+  position: center;
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
+}
+.overlay-content img {
+  width: 1200px;
 }
