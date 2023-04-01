@@ -1,4 +1,5 @@
 var nama;
+var currentAvatar = "a";
 
 $("input")
   .keyup(function () {
@@ -23,27 +24,25 @@ $(document).ready(function () {
   var firstImg = $(".active");
   var lastImg = $(".last");
   $(".next").on("mousedown", function () {
-    var currentImg = $(".active");
-    var nextImg = currentImg.next();
-
-    if (nextImg.length > 0) {
-      currentImg.removeClass("active").css("z-index", -10);
-      nextImg.addClass("active").css("z-index", 10);
-    } else {
-      currentImg.removeClass("active").css("z-index", -10);
-      firstImg.addClass("active").css("z-index", 10);
+    var nextAvatar = $("#" + currentAvatar)
+      .next()
+      .attr("id");
+    if (nextAvatar === undefined) {
+      nextAvatar = firstImg.attr("id");
     }
+    currentAvatar = nextAvatar;
+    $(".active").removeClass("active");
+    $("#" + currentAvatar).addClass("active");
   });
   $(".prev").on("mousedown", function () {
-    var currentImg = $(".active");
-    var prevImg = currentImg.prev();
-
-    if (prevImg.length > 0) {
-      currentImg.removeClass("active").css("z-index", -10);
-      prevImg.addClass("active").css("z-index", 10);
-    } else {
-      currentImg.removeClass("active").css("z-index", -10);
-      lastImg.addClass("active").css("z-index", 10);
+    var prevAvatar = $("#" + currentAvatar)
+      .prev()
+      .attr("id");
+    if (prevAvatar === undefined) {
+      prevAvatar = lastImg.attr("id");
     }
+    currentAvatar = prevAvatar;
+    $(".active").removeClass("active");
+    $("#" + currentAvatar).addClass("active");
   });
 });
