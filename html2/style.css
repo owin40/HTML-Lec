@@ -65,6 +65,9 @@ p {
   overflow: hidden;
   float: left;
   max-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slider-outer {
