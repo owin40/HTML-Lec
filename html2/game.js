@@ -127,7 +127,7 @@ let timerId = setInterval(function () {
     $("#screen").css("background-image", "url(assets/timebg/night2.png)");
   }
 
-  if (day % 5 == 0 && day != 0 && !levelincrease && hour == 0 && min == 0) {
+  if (day % 2 == 0 && day != 0 && !levelincrease && hour == 0 && min == 0) {
     if (sehat.value >= 60) {
       alert(playerName + " you are so healthy at level " + level);
       makan.value += 0;
@@ -166,7 +166,7 @@ let timerId = setInterval(function () {
       window.location.assign("index.html");
     }
   }
-  if (level == 10) {
+  if (level == 3) {
     alert("Congrats " + playerName + " you are now the healthiest animal!");
     if (confirm("Do you want to play again ?")) {
       location.reload();
