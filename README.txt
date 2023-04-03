@@ -1,4 +1,4 @@
-Kelompok 4:
+Kelompok Biru:
 - Godwin Gilbert Woisiri (00000083560)
 - Kyla Arynda Salsabila (00000087561)
 - Siti Maryama Ramadhini Afifah (00000089085) 
